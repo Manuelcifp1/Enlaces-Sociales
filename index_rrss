@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="fondo">
+            <div class="fondo-color"></div>
+            <div class="fondo-blanco"></div>
+        </div>
+        <div class="tarjeta">
+            <div class="nombre-usuario">
+                <p>Manolo Alba</p>
+            </div>
+            <div class="descripcion">
+                <p>Estudiando Tecnico Superior en Desarrollo de Aplicaciones Web en el CIFP 1 de Ceuta
+                     y en situación de demanda de empleo.<br> 
+                     He aprendido mucho en estos últimos meses pero aún queda 
+                     un largo camino.                    
+                </p>
+                    <img src="avataaars.png" alt="imagen de perfil">                
+            </div>
+        </div>    
+        <div class="botones-sociales">
+                <a target="_blank" href="https://www.tiktok.com/" class="btn-social_tiktok">Tiktok</a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCGAzPl4r_9wnYNx5OiNUJIQ" class="btn-social_youtube">Youtube</a>
+                <a target="_blank" href="https://twitter.com/?lang=es" class="btn-social_twitter">Twitter</a>
+                <a target="_blank" href="https://www.instagram.com/manalba_cosplay" class="btn-social_instagram">Instagram</a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100048973217112" class="btn-social_facebook">Facebook</a>
+                <a target="_blank" href="https://github.com/Manuelcifp1" class="btn-social_github">Github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/manuel-alba-9003825b/" class="btn-social_linkedin">Linkedin</a>
+                <a target="_blank" href="https://www.paypal.com/es/home" class="btn-social_paypal">Paypal</a>
+                <a target="_blank" href="https://www.whatsapp.com/?lang=es" class="btn-social_whatsapp">Whatsapp</a>
+        </div>
+        <div class="firma">Manolo Alba  copyright 2023</div>        
+    </main>    
+</body>
+</html>
