@@ -1,0 +1,234 @@
+/*reiniciar bordes*/
+
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: macabre;
+    font-size: 35px;
+}
+
+@font-face {
+    font-family: "macabre";
+    src: url(/fonts/macabre.otf);
+}
+
+main {
+    display:flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: rgb(196, 8, 8);
+    max-width: 90vw;
+    height: max-content;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*situar el parrafo en la mitad de la columna*/
+.nombre-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px 0px 20px;
+    
+}
+
+.descripcion > img {
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.descripcion >p {
+   
+ 
+    text-align: center;
+    line-height: 30px;
+    width: 900px;
+}
+
+.botones-sociales {
+    
+    margin-top: 0px;
+    text-align: center;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-decoration: none;
+     
+   
+    
+    
+}
+
+
+
+.firma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.btn-social_tiktok {
+
+color: black;
+background-color: rgb(89, 5, 5);
+width: 900px;
+justify-content: center;
+text-decoration: none;
+
+}
+
+.btn-social_youtube {
+
+    color: black;
+    background-color: rgb(63, 3, 3);
+    width: 900px;
+    text-decoration: none;
+
+}
+
+.btn-social_twitter {
+
+    color: black;
+    background-color: rgb(37, 2, 2);
+    width: 900px;
+    text-decoration: none;
+}
+
+.btn-social_instagram {
+
+    color: black;
+    background-color: rgb(89, 5, 5);
+    width: 900px;
+    text-decoration: none;
+}
+
+.btn-social_facebook {
+
+    color: black;
+    background-color: rgb(63, 3, 3);
+    width: 900px;
+    text-decoration: none;
+
+}
+
+.btn-social_github {
+
+    color: black;
+    background-color: rgb(37, 2, 2);   
+    width: 900px;
+    text-decoration: none;
+}
+
+.btn-social_linkedin {
+
+    color: black;
+    background-color: rgb(89, 5, 5);
+    width: 900px;
+    text-decoration: none;
+
+}
+
+.btn-social_paypal {
+
+    color: black;
+    background-color: rgb(63, 3, 3);
+    width: 900px;
+    text-decoration: none;
+
+}
+
+.btn-social_whatsapp {
+
+    color: black;
+    background-color: rgb(37, 2, 2);
+    width: 900px;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.fondo {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    z-index: -1;
+}
+
+.fondo-color {
+    width: 100%;
+    height: 40%;
+    background-color: black;
+}
+
+.fondo-blanco {
+    width: 100%;
+    height: 60%;
+    background-color: darkred;
+}
+
+@media (min-width:900px) {
+
+    .main {
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .tarjeta {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        max-width: 900px;
+    }
+
+    .descripcion {
+        flex-direction: column-reverse;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .nombre-usuario {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .botones-sociales {
+        
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .firma {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .btn-tiktok {
+        border-top-right-radius: 15px;
+    }
+}
