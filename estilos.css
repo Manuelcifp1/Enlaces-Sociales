@@ -1,4 +1,4 @@
-/*reiniciar bordes*/
+
 
 *,*::before, *::after {
     box-sizing: border-box;
@@ -7,33 +7,32 @@
 }
 
 body {
-    font-family: macabre;
-    font-size: 20px;
+    font-family: Xolonium;
+    font-size: 30px;
 }
 
 @font-face {
-    font-family: "macabre";
-    src: url(/fonts/macabre.otf);
+    font-family: "Xolonium";
+    src: url(/fonts/Xolonium-Regular.otf);
 }
 
 main {
+    color: darkblue;
     display:flex;    
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 .tarjeta {
-    background-color: rgb(196, 8, 8);
-    max-width: 90vw;
-    height: max-content;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: aqua;
+    max-width: 100vw;
+    height: max-content;    
+    margin-top: 20px;       
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 5px; 
 }
-/*situar el parrafo en la mitad de la columna*/
+
 .nombre-usuario {
     display: flex;
     flex-direction: column;
@@ -42,134 +41,92 @@ main {
 }
 
 .descripcion {
+   
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 20px 0px 20px;
-    
+    margin: 20px 20px 20px 20px;
+
 }
 
 .descripcion > img {
-    margin: 20px;
+    margin: 7px;
     border-radius: 50%;
+    width: 300px;
+    
 }
 
 .descripcion >p {
    
- 
     text-align: center;
     line-height: 30px;
-    width: 900px;
+    width: 800px;
+    padding-left: 15px;
 }
 
 .botones-sociales {
     
-    margin-top: 0px;
-    text-align: center;
-    border: 0px;
+    text-align: center;    
     display: flex;
     flex-direction: column;
     display: flex;    
     align-items: center;
     justify-content: center;
     padding: 15px;
-    text-decoration: none;
-     
-   
-    
+    text-decoration: none; 
     
 }
 
-
-
-.firma {
+footer {
+    color: aqua;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
+    align-items: center;        
+    padding-top: 9px;
+    background-color: darkblue;
+    width: 100%;
+    height: 66px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
 }
 
-.btn-social_tiktok {
+.btn-social_1 {
 
-color: black;
-background-color: rgb(89, 5, 5);
+color: darkblue;
+background-color: rgb(61, 61, 251);
 width: 900px;
-justify-content: center;
 text-decoration: none;
+display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
 
 }
 
-.btn-social_youtube {
+.btn-social_2 {
 
-    color: black;
-    background-color: rgb(63, 3, 3);
+    color: darkblue;
+    background-color:rgb(85, 85, 236);
     width: 900px;
     text-decoration: none;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
 
 }
 
-.btn-social_twitter {
+.btn-social_3 {
 
-    color: black;
-    background-color: rgb(37, 2, 2);
+    color: darkblue;
+    background-color: rgb(112, 112, 210);
     width: 900px;
     text-decoration: none;
-}
-
-.btn-social_instagram {
-
-    color: black;
-    background-color: rgb(89, 5, 5);
-    width: 900px;
-    text-decoration: none;
-}
-
-.btn-social_facebook {
-
-    color: black;
-    background-color: rgb(63, 3, 3);
-    width: 900px;
-    text-decoration: none;
-
-}
-
-.btn-social_github {
-
-    color: black;
-    background-color: rgb(37, 2, 2);   
-    width: 900px;
-    text-decoration: none;
-}
-
-.btn-social_linkedin {
-
-    color: black;
-    background-color: rgb(89, 5, 5);
-    width: 900px;
-    text-decoration: none;
-
-}
-
-.btn-social_paypal {
-
-    color: black;
-    background-color: rgb(63, 3, 3);
-    width: 900px;
-    text-decoration: none;
-
-}
-
-.btn-social_whatsapp {
-
-    color: black;
-    background-color: rgb(37, 2, 2);
-    width: 900px;
-    text-decoration: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding:6px;
 }
 
 .fondo {
@@ -181,14 +138,14 @@ text-decoration: none;
 
 .fondo-color {
     width: 100%;
-    height: 40%;
-    background-color: black;
+    height: 21.5%;
+    background-color: darkblue;
 }
 
 .fondo-blanco {
     width: 100%;
-    height: 60%;
-    background-color: darkred;
+    height: 78.5%;
+    background-color: aqua;
 }
 
 @media (min-width:900px) {
@@ -220,15 +177,12 @@ text-decoration: none;
     .botones-sociales {
         
         grid-column: 2/3;
-        grid-row: 1/4;
+        grid-row: 1/3;
     }
 
-    .firma {
+    footer {
         grid-column: 1/3;
         grid-row: 3/4;
     }
-
-    .btn-tiktok {
-        border-top-right-radius: 15px;
-    }
+    
 }
