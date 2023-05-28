@@ -9,6 +9,15 @@
 body {
     font-family: Xolonium;
     font-size: 30px;
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: Xolonium;
+    font-size: 17px;
 }
 
 @font-face {
@@ -20,17 +29,17 @@ main {
     color: darkblue;
     display:flex;    
     flex-direction: column;
-    align-items: center;    
+    align-items: center;  
 }
 
 .tarjeta {
     background-color: aqua;
-    max-width: 100vw;
+    max-width: 90vw;
     height: max-content;    
-    margin-top: 20px;       
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding-bottom: 5px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;      
+    border-radius: 5px;
+     
 }
 
 .nombre-usuario {
@@ -45,89 +54,159 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 0px 20px;
 
 }
 
 .descripcion > img {
-    margin: 7px;
+    margin: 20px;
     border-radius: 50%;
-    width: 300px;
+    width: 240px;
     
 }
 
 .descripcion >p {
    
     text-align: center;
-    line-height: 30px;
-    width: 800px;
-    padding-left: 15px;
+    line-height: 22px;
+    
 }
 
-.botones-sociales {
-    
-    text-align: center;    
+.botones-sociales {   
+     
     display: flex;
-    flex-direction: column;
+    flex-direction: column;      
+ 
+}
+
+.btn-social {
+    border: 1px solid black;
+    background-color: black;
     display: flex;    
     align-items: center;
     justify-content: center;
     padding: 15px;
-    text-decoration: none; 
-    
+    text-decoration: none;
+    color: white;
+
 }
 
+
 footer {
-    color: aqua;
+    color: darkblue;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;        
-    padding-top: 9px;
-    background-color: darkblue;
-    width: 100%;
-    height: 66px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;    
     
 }
 
-.btn-social_1 {
+.btn-social_tiktok {
 
 color: darkblue;
 background-color: rgb(61, 61, 251);
-width: 900px;
 text-decoration: none;
 display: flex;    
-    align-items: center;
-    justify-content: center;
-    padding: 6px;
+align-items: center;
+justify-content: center;
+padding: 4px;
 
 }
 
-.btn-social_2 {
+.btn-social_youtube {
 
     color: darkblue;
-    background-color:rgb(85, 85, 236);
-    width: 900px;
+    background-color:rgb(85, 85, 236);    
     text-decoration: none;
     display: flex;    
     align-items: center;
     justify-content: center;
-    padding: 6px;
+    padding: 4px;
 
 }
 
-.btn-social_3 {
+.btn-social_twitter {
 
     color: darkblue;
-    background-color: rgb(112, 112, 210);
-    width: 900px;
+    background-color: rgb(112, 112, 210);    
     text-decoration: none;
     display: flex;    
     align-items: center;
     justify-content: center;
-    padding:6px;
+    padding:4px;
 }
+
+.btn-social_instagram {
+
+    color: darkblue;
+    background-color: rgb(61, 61, 251);    
+    text-decoration: none;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    
+    }
+    
+    .btn-social_facebook {
+    
+        color: darkblue;
+        background-color:rgb(85, 85, 236);        
+        text-decoration: none;
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+    
+    }
+    
+    .btn-social_github {
+    
+        color: darkblue;
+        background-color: rgb(112, 112, 210);        
+        text-decoration: none;
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        padding:4px;
+    }
+
+    .btn-social_linkedin {
+
+        color: darkblue;
+        background-color: rgb(61, 61, 251);        
+        text-decoration: none;
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        
+        }
+        
+        .btn-social_paypal {
+        
+            color: darkblue;
+            background-color:rgb(85, 85, 236);            
+            text-decoration: none;
+            display: flex;    
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+        
+        }
+        
+        .btn-social_whatsapp {
+        
+            color: darkblue;
+            background-color: rgb(112, 112, 210);            
+            text-decoration: none;
+            display: flex;    
+            align-items: center;
+            justify-content: center;
+            padding:4px;
+        }
 
 .fondo {
     position: absolute;
@@ -138,13 +217,13 @@ display: flex;
 
 .fondo-color {
     width: 100%;
-    height: 21.5%;
+    height: 40%;
     background-color: darkblue;
 }
 
 .fondo-blanco {
     width: 100%;
-    height: 78.5%;
+    height: 60%;
     background-color: aqua;
 }
 
@@ -184,5 +263,10 @@ display: flex;
         grid-column: 1/3;
         grid-row: 3/4;
     }
+
+    .btn-tiktok {
+        border-top-right-radius: 15px;
+    }
+
     
 }
